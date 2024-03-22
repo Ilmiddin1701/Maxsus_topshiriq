@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@drawable/background_style"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:textColor="@color/white"
+        android:text="Converter App"
+        android:textSize="@dimen/_22ssp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:background="#3D444C"
+        android:paddingStart="@dimen/_10sdp"
+        android:gravity="center_vertical"
+        tools:ignore="RtlCompat" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingEnd="@dimen/_8sdp"
+        android:paddingStart="@dimen/_8sdp"
+        android:paddingBottom="@dimen/_50sdp">
+
+        <EditText
+            android:id="@+id/usd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edt_style"
+            android:textSize="@dimen/_25ssp"
+            android:textColor="@color/white"
+            android:hint="USD"
+            android:inputType="number"
+            android:layout_margin="@dimen/_8sdp"
+            android:textColorHint="#696C71"
+            android:padding="@dimen/_10sdp" />
+
+        <EditText
+            android:id="@+id/som"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edt_style"
+            android:textSize="@dimen/_25ssp"
+            android:textColor="@color/white"
+            android:hint="SO'M"
+            android:inputType="number"
+            android:gravity="end"
+            android:layout_margin="@dimen/_8sdp"
+            android:textColorHint="#696C71"
+            android:padding="@dimen/_10sdp" />
+    </LinearLayout>
+
+</LinearLayout>
